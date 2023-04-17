@@ -21,7 +21,16 @@ This script opens multiple terminals in a Tmux session and performs various acti
 | 1 | 2 |
 | 3 | 4 |
 ```
+On macOS and Linux, you need to run python3:
 
+python3 -m pip install pyautogui
+On Linux, additionally you need to install the scrot application, as well as Tkinter:
+
+sudo apt-get install scrot
+
+sudo apt-get install python3-tk
+
+sudo apt-get install python3-dev
 * Terminal 1: Changes the working directory to a Node.js project directory and starts the server using the command npm start.
 *  Terminal 2: Creates a vertical split and moves the cursor to the right pane.
 * Terminal 3: Creates a horizontal split below Terminal 2 and opens htop to monitor system resource usage.
